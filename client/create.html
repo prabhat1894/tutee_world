@@ -1,0 +1,83 @@
+<template name="create">
+    <div class="paddingleft30 paddingTop20 pagetitle boldText"> Sample Form </div>
+    <div class="titleLine paddingleft30 width90Percent marginleft30 ">
+        <div class="titleLineEnd"></div>
+    </div>
+    <div class="gridMainHeading">User Details</div>
+    <br>
+    <form  class="formId">
+        <table border="1" align="center" class="pxBorder" cellpadding="1" cellspacing="0" width="96%">
+            <tr>
+                <td class="searchleftmidtable">User Type <span class="mandartoryfield"></span></td>
+                <td class="searchrightmidtable">
+                    <select name="type1">
+                        <option value=""> Select</option>
+                        <option value="Grad"> Grad</option>
+                        <option value="Under Grad"> Under Grad</option>
+                    </select>
+                </td>
+                <td class="searchleftmidtable">Salutation </td>
+                <td class="searchrightmidtable">
+                    <select name="sal">
+                        <option value=""> Select</option>
+                        <option value="Mr."> Mr.</option>
+                        <option value="Mrs."> Mrs.</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="searchleftmidtable">Name </td>
+                <td class="searchrightmidtable">
+                    <input type="text" name="name1">
+                </td>
+                <td class="searchleftmidtable">Interests</td>
+                <td class="searchrightmidtable">
+                    <select multiple=true name="interest">
+                        <option value=""> Select</option>
+                        <option value="Academics"> Academics</option>
+                        <option value="Workshops"> Workshops</option>
+                        <option value="Sports"> Sports</option>
+                        <option value="Fests"> Fests</option>
+                        <option value="Others"> Others</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="searchleftmidtable"> Email ID <span class="mandartoryfield"></span></td>
+                <td class="searchrightmidtable">
+                    <input type="text" value="xyz@abc.com" name="email">
+                </td>
+                <td class="searchleftmidtable"> DOB <span class="mandartoryfield"></span></td>
+                <td class="searchrightmidtable">
+                    <input type="text" value="dd/mm/yyyy" name="dob">
+                </td>
+            </tr>
+            <tr>
+                <td class="searchleftmidtable">Location</td>
+                <td class="searchrightmidtable">
+                    <select name="loc">
+                        <option value=""> Select</option>
+                        <option value="Delhi"> Delhi</option>
+                        <option value="Gurgaon"> Gurgaon</option>
+                        <option value="Noida"> Noida</option>
+                    </select>
+                </td>
+                <td class="searchleftmidtable">Locality</td>
+                <td class="searchrightmidtable">
+                    <select name="local">
+                        <option value=""> Select</option>
+                        <option value="Dwarka"> Dwarka</option>
+                        <option value="Janak Puri"> Janak Puri</option>
+                        <option value="Malviya Nagar"> Malviya Nagar</option>
+                        <option value="CP"> CP</option>
+                        <option value="Hauz Khas"> Hauz Khas</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        <div class="paddingTop20 textalign">
+            <input name="submit" type="submit" value="Submit" class="submit" border="0" />
+            <input name="reset" type="reset" value="Reset" class="buttonBG fontWhite" border="0" />
+        </div>
+    </form>
+</template>
